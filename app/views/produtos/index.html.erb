@@ -1,0 +1,27 @@
+<h1>Listing produtos</h1>
+
+<table>
+  <tr>
+    <th>Descricao</th>
+    <th>Preco</th>
+    <th>Quantidade estoque</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @produtos.each do |produto| %>
+  <tr>
+    <td><%= produto.descricao %></td>
+    <td><%= produto.preco %></td>
+    <td><%= produto.quantidade_estoque %></td>
+    <td><%= link_to 'Show', produto %></td>
+    <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
+    <td><%= link_to 'Destroy', produto, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Produto', new_produto_path %>

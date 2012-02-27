@@ -1,4 +1,12 @@
 Laticinio::Application.routes.draw do
+  resources :vendas
+
+  resources :clientes
+
+  resources :funcionarios
+
+  resources :produtos
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
