@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :cliente do
-    nome "MyString"
+    nome "Chico"
     rg "MyString"
     cpf "MyString"
     endereco "MyString"

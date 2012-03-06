@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Funcionario %><br />
-    <%= f.text_field :Funcionario %>
+    <%= f.label :Funcionario_id, "Funcionario" %><br />
+    <%= f.select :Funcionario_id, Funcionario.all.collect {|f| [f.nome, f.id]} %>
   </div>
   <div class="field">
-    <%= f.label :Cliente %><br />
-    <%= f.text_field :Cliente %>
+    <%= f.label :Cliente_id, "Cliente" %><br />
+    <%= f.select :Cliente_id, Cliente.all.collect {|f| [f.nome, f.id]} %>
   </div>
   <div class="field">
     <%= f.label :desconto %><br />
@@ -28,6 +28,6 @@
     <%= f.text_field :preco_total %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar" %>
   </div>
 <% end %>

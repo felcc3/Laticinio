@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :funcionario do
-    nome "MyString"
+    nome "Jorge"
     rg "MyString"
     cpf "MyString"
     endereco "MyString"

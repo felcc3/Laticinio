@@ -1,23 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Funcionario:</b>
-  <%= @venda.Funcionario %>
+  Funcionario: <%= @venda.Funcionario.try :nome %>
 </p>
 
 <p>
-  <b>Cliente:</b>
-  <%= @venda.Cliente %>
+  Cliente: <%= @venda.Cliente.try :nome %>
 </p>
 
 <p>
-  <b>Desconto:</b>
-  <%= @venda.desconto %>
+  Desconto: <%= @venda.desconto %>
 </p>
 
 <p>
-  <b>Preco total:</b>
-  <%= @venda.preco_total %>
+  Preco total: <%= @venda.preco_total %>
 </p>
 
 
